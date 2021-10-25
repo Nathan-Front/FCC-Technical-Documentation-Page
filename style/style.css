@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    display: flex;
+   overflow: hidden;
+    font-family: Quicksand, sans-serif;
+}
+#navbar{
+    margin: 0;
+    padding: 0;
+    width: 25vw;
+    max-height: 100vh;
+    background-color: rgb(247, 247, 247);
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2,h3{
+    margin: 1em 0;
+    padding: 0;
+    font-size: 1.6em;
+}
+p, li{
+    font-size: .9em;
+    line-height: 1.5em;
+    font-weight: 500;
+    margin: 0 0 0 1em;
+}
+li{
+    margin: 0 0 0 1.5em;
+}
+code{
+    width: 100%;
+    padding: 2em 0 2em 1em;
+    background-color: rgb(241, 241, 241);
+    display: block;
+    line-height: 1.5em;
+    font-size: .9em;
+    margin: 1em 0 1em 1em;
+}
+a{
+    font-weight: 200;
+}
+section a{
+    font-weight: bold;
+}
+#navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow-y: scroll;
+    max-height: 88vh;
+}
+#navbar ul li{
+    margin: 0;
+    padding: 0;
+    height: 3em;
+    border-top: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+#navbar ul li a{
+    margin: 0 0 0 1.5em;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1em;
+    color: black;
+}
+#main-doc{
+    margin: 0 0 0 0;
+    padding: 1.5em 3em;
+    width: 80vw;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#main-doc ul{
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 1em;
+}
+.nested-ul ul{
+    margin: 1em 0 0 0;
+    font-size: 1.1em;
+}
+
+@media only screen and (max-width:900px){
+    body{
+        flex-direction: column;
+        overflow: scroll;
+        width: 100%;
+        height: auto;
+    }
+    #navbar{
+        width: 100%;
+        max-height: 50vh;
+    }
+    #navbar ul{
+        margin: 0;
+        max-height: 40vh;
+        border: 2px solid black;
+        width: 95vw;
+    }
+    #navbar ul li{
+        max-width: 100vw;
+    }
+    #main-doc{
+        overflow: visible;
+        padding: 0;
+        width: 80vw;
+        height: auto;
+        margin: 2em auto;
+    }
+    h2,h3{
+        margin-left: -.5em;
+    }
+    p{
+        margin-left: -.1em;
+    }
+    #main-doc section:nth-child(3) p{
+        margin: 0 0 0 -.5em;
+    }
+    #main-doc section:nth-child(3) p:nth-child(4){
+        margin: 0 0 0 1em;
+    }
+    #main-doc section:nth-child(3) p code{
+        margin: 1em -3.5em;
+        padding: 2em 3.5em 2em 2em;
+    }
+    section p code{
+        margin: 1em -2em;
+        padding: 2em 2em 2em 2em;
+    }
+    #main-doc section:nth-last-child(1){
+        margin: 0 0 5em 0;
+    }
+}
