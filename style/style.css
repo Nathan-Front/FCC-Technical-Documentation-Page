@@ -64,7 +64,7 @@ section a{
 #navbar ul li{
     margin: 0;
     padding: 0;
-    height: 3em;
+    height: 4em;
     border-top: 1px solid black;
     display: flex;
     align-items: center;
